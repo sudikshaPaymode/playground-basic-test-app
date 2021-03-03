@@ -1,0 +1,40 @@
+
+.search-string-container{
+    //width:100%;
+    padding:10px;
+}
+.search-string-header{
+    background-color: black;
+    padding:20px;
+    height: 25px;
+    color:gray;
+    &__buttons{
+        float:right;
+    }
+}
+.search-string-content{
+    //padding:10px 50px;
+}
+.search-query-input{
+    //width:100%;
+    margin:20px;
+}
+.search-query-message{
+    //width:100%;
+    margin:20px;
+}
+.search-query-input-wrapper,.search-query-message-wrapper{
+    min-height:30px;
+    width:100%;
+}
+.search-query-message-wrapper{
+    min-height:200px;
+    width:100%;
+}
+.search-button{
+    width:200px;
+    background-color: #3D8BCD;
+    color:white;
+    float:right;
+}
+

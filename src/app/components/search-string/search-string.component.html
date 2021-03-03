@@ -1,0 +1,36 @@
+<form [formGroup]="queryStringFormGroup" *ngIf="!showResultComponent">
+    <div class="search-string-container">
+        <div class="search-string-header">
+            <span>AOT Technologies</span>
+            <span class="search-string-header__buttons">
+                <button type="submit">
+                    Profile
+                </button>
+                <button type="submit">
+                    Logout
+                </button>
+            </span>
+        </div>
+        <div class="search-string-content">
+            <div class="search-query-input">
+                <div>Query</div>
+                <input placeholder="Hello" class="search-query-input-wrapper"
+                       ariaLabel="Group name"
+                       formControlName="queryString"
+                       maxlength="255"
+                       [required]="true" [value]="getFormControl('queryString').value"/>
+
+            </div>
+            <div class="search-query-message">
+                <div>Message</div>
+                <textarea formControlName="message" maxlength="2048" class="search-query-message-wrapper"></textarea>
+            </div>
+            <div>
+                <button mat-button color="primary" type="submit" class="search-button" (click)="search()">Search</button>
+            </div>
+        </div>
+    </div>
+</form>
+<div *ngIf="showResultComponent">
+    <app-query-result [searchString]="getFormControl('message').value" [query]="getFormControl('queryString').value" [resultString]="resultString" [countOfOccurrences]="countOfOccurrences" [countOfReverseOccurrences]="countOfReverseOccurrences"></app-query-result>
+</div>

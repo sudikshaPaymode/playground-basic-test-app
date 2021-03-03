@@ -1,0 +1,39 @@
+
+.query-result-container{
+    padding:10px;
+}
+.query-result-header{
+    padding:20px;
+    height: 25px;
+    color:gray;
+    &__id{
+        float:right;
+        color:red;
+    }
+}
+.search-string-content{
+    //padding:10px 50px;
+}
+.search-query-input{
+    //width:100%;
+    margin:20px;
+}
+.search-query-message{
+    //width:100%;
+    margin:20px;
+}
+.search-query-input-wrapper,.search-query-message-wrapper{
+    min-height:30px;
+    width:100%;
+}
+.search-query-message-wrapper{
+    min-height:200px;
+    width:100%;
+}
+.search-button{
+    width:200px;
+    background-color: #3D8BCD;
+    color:white;
+    float:right;
+}
+
